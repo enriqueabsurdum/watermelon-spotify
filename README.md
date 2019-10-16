@@ -11,7 +11,7 @@ Desde una terminal ejecutar el comando `npm i` para instalar las dependencias de
 
 El Backend se despliega en modo local en la ruta `http://localhost:3000/api/v1/albums`.
 
-Desde una terminal ejecutar el siguiente comando para desplegar el backend en modo desarrollo `node run dev`.
+Desde una terminal ejecutar el siguiente comando para desplegar el backend en modo desarrollo `npm run dev`.
 
 ### Desplegar Frontend en modo desarrollo:
 Desde una terminal ejecutar el comando `npm i` para instalar las dependencias del proyecto.
