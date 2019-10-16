@@ -1,0 +1,46 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/watermelon-spotify-api/build
+/watermelon-spotify-frontend/dist
+
+/watermelon-spotify-frontend/tmp
+/watermelon-spotify-frontend/out-tsc
+# Only exists if Bazel was run
+/watermelon-spotify-frontend/bazel-out
+
+# dependencies
+/watermelon-spotify-api/node_modules
+/watermelon-spotify-frontend/node_modules
+
+# profiling files
+/watermelon-spotify-frontend/chrome-profiler-events*.json
+/watermelon-spotify-frontend/speed-measure-plugin*.json
+
+# IDEs and editors
+/watermelon-spotify-frontend/.idea
+/watermelon-spotify-api/.idea
+
+# misc
+/watermelon-spotify-frontend/.sass-cache
+/watermelon-spotify-frontend/connect.lock
+/watermelon-spotify-frontend/coverage
+/watermelon-spotify-frontend/libpeerconnection.log
+/watermelon-spotify-frontend/npm-debug.log
+/watermelon-spotify-frontend/yarn-error.log
+/watermelon-spotify-frontend/testem.log
+/watermelon-spotify-frontend/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+/watermelon-spotify-api/.DS_Store
+/watermelon-spotify-api/Thumbs.db
+
+/watermelon-spotify-frontend/.DS_Store
+/watermelon-spotify-frontend/Thumbs.db
+
+# packege-lock.json
+/watermelon-spotify-api/packege-lock.json
+/watermelon-spotify-frontend/packege-lock.json

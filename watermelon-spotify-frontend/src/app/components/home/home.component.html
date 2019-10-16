@@ -1,0 +1,37 @@
+<div class="container mt-5">
+    <div class="row justify-content-md-center">
+        <div class="col-lg-6 col-md-10 col-sm-12">
+            <form [formGroup]="albumForm" (ngSubmit)="searchAlbum()">
+                <div class="input-group input-group-lg mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar Álbum"
+                           aria-label="Recipient's username" aria-describedby="basic-addon2"
+                           formControlName="albumName">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary custom-hover" [disabled]="!albumForm.valid"
+                                type="submit" id="button-addon2">
+                            <i class="fas fa-search text-success"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-lg-12 text-center text-secondary" *ngIf="flag">
+            <h2>Sin resultados</h2>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 d-flex align-items-stretch" *ngFor="let album of albums">
+            <div class="card mb-4">
+                <img [src]="album.images[0].url" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ album.artists[0].name }}</h5>
+                    <h5 class="card-text text-secondary text-capitalize"><i
+                            class="fas fa-compact-disc mr-2"></i>{{ album.name }}</h5>
+                    <p class="text-secondary custom-release"><i
+                            class="far fa-calendar-alt mr-2"></i>{{ album.release_date | date:'MMM dd, y' }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
