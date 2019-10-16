@@ -33,12 +33,12 @@ class SpotifyControllers {
         }
       });
       return token.data.access_token;
-    } catch (err: Error) {
+    } catch (err) {
       console.error(err);
     }
   }
 
-  public async getAlbumFromSpotify(res: Response, nameAlbum: string, type: string, market: string): Promise<object> {
+  public async getAlbumFromSpotify(res: Response, nameAlbum: string, type: string, market: string): Promise<any> {
     this.accessToken = await this.getAccessToken(data);
     console.log(this.accessToken);
     try {
@@ -49,13 +49,14 @@ class SpotifyControllers {
         }
       });
       return album.data.albums.items;
-    } catch (err: Error) {
+    } catch (err) {
       console.error(err);
     }
   }
 
   private objectToUrlEncoded(data: object) {
     return Object.keys(data).map((key) => {
+      // @ts-ignore
       return encodeURIComponent(key) + '=' + encodeURIComponent(data[key]);
     }).join('&');
   }
