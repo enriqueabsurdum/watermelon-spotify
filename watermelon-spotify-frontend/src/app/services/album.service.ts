@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {environment} from '../../environments/environment';
-import {Album} from '../interfaces/album';
 
 @Injectable({
   providedIn: 'root'
@@ -19,7 +18,7 @@ export class AlbumService {
     const headers = new HttpHeaders({
       Accept: 'application/json'
     });
-    return this.http.get<Album>(path, {headers});
+    return this.http.get(path, {headers});
   }
 
 }

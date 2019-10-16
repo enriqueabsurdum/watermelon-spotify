@@ -29,7 +29,6 @@ class AlbumControllers {
       for (let i = 0; i < album.length; i++) {
         const newAlbum = new AlbumSchema(album[i]);
         await newAlbum.save();
-        console.log('ID =============>>> ', newAlbum.id);
       }
       res.json({
         message: 'New albums inserted in the MongoDB',

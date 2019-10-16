@@ -1,8 +1,8 @@
 const environment = {
   production: false,
   grantType: 'client_credentials',
-  clientId: 'effa754bd0c94974825c5965c29863ef',
-  clientSecret: '3d78c081e3894e22a62aa502741e88c8',
+  clientId: '46b4f1ef8c994ec0a6759523243177aa',
+  clientSecret: '2e9b5ec7135d4e129239abaac10de4f2',
   baseURL: 'https://api.spotify.com/v1/',
   tokenURL: 'https://accounts.spotify.com/api/token?',
 };

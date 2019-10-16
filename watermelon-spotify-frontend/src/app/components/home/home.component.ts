@@ -33,10 +33,10 @@ export class HomeComponent implements OnInit {
   public searchAlbum(): void {
     this.flag = false;
     this.albumService.getAlbum(this.albumForm.value.albumName)
-      .subscribe((res: object) => {
-        this.albums = res.data;
+      .subscribe((res) => {
+        this.albums = res['data'];
         console.log(this.albums);
-        if (this.albums <= 0) {
+        if (this.albums <= []) {
           this.flag = true;
         }
       }, (err: Error) => {
