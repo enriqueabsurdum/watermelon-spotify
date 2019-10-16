@@ -42,5 +42,5 @@ Thumbs.db
 /watermelon-spotify-frontend/Thumbs.db
 
 # packege-lock.json
-/watermelon-spotify-api/packege-lock.json
-/watermelon-spotify-frontend/packege-lock.json
+/watermelon-spotify-api/package-lock.json
+/watermelon-spotify-frontend/package-lock.json
